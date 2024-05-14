@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- ... your meta tags and title ... -->
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+    <header>
+    <div>
+        <img src="header.jpg" width="1500" height="100">
+        <nav class="navigation">
+     
+            <a href="index2.html">Home</a>
+            <div class="dropdown">
+             <a href="event_information.html" class="dropbtn">Upcoming Events</a> 
+              </div>
+              <div class="dropdown">
+             <a href="event_details_1.html" class="dropbtn">List of Events</a>
+               
+              </div>
+              <div class="dropdown">
+             <a href="contact.html" class="dropbtn">Contact</a>
+               
+              </div>
+        </nav>
+       </div>
+    </header>
+    <div class="parent-container">
+     <div class="box-container">
+        <h2>CODE TITAN-2K23</h2>
+        <p><strong>Description:</strong> It is a National level coding contest organised by ACM student chapter, Department of CSE, PVPSIT</p>
+        <p><strong>Conducted On:</strong> October 11, 2023</p>
+
+        <!-- Image slider for CODE TITAN-2K23 galleries -->
+        <h2>Galleries</h2>
+        <div class="slider-container">
+            <div class="slider">
+                <img src="acm1.jfif" alt="Gallery 1">
+                <img src="acm2.jfif" alt="Gallery 2">
+            </div>
+            <button class="prev-btn" onclick="prevSlide()">&#10094;</button>
+            <button class="next-btn" onclick="nextSlide()">&#10095;</button>
+        </div>
+        </div>
+       <div class="box-container">
+        <h2>CODE AND CREATE CONTEST</h2>
+        <p><strong>Description:</strong>Student Council of PVPSIT conducted CODE AND CREATE the WEB DEVELOPMENT DESIGN CHALLENGE</p>
+        <li>Topics:E-Commerce,Personal Portals,Blogging websites,Online booking websites,Real-estate listing websites,OTT Platform(clones),News Aggregators,E-Learning Platforms</li>
+        <p><strong>Conducted On:</strong> October 12, 2023</p>
+
+        
+        <h2>Galleries</h2>
+        <div class="slider-container">
+            <div class="slider">
+                <img src="img1.jfif" alt="Gallery 1">
+                <img src="acm2.jfif" alt="Gallery 2">
+            </div>
+            <button class="prev-btn" onclick="prevSlide()">&#10094;</button>
+            <button class="next-btn" onclick="nextSlide()">&#10095;</button>
+        </div>
+        </div>
+       <div class="box-container">
+        <h2>POSTER PRESENTATION</h2>
+        <p><strong>Description:</strong>INSTITUTE INNOVATIVE COUNCIL of PVPSIT Conducted a Poster Presentation on INNOVATIVE STARTUP'S</p>
+        <p><strong>Conducted On:</strong> September 11, 2023</p>
+
+        <!-- Image slider for CODE TITAN-2K23 galleries -->
+        <h2>Galleries</h2>
+        <div class="slider-container">
+            <div class="slider">
+                <img src="acm1.jfif" alt="Gallery 1">
+                <img src="acm2.jfif" alt="Gallery 2">
+            </div>
+            <button class="prev-btn" onclick="prevSlide()">&#10094;</button>
+            <button class="next-btn" onclick="nextSlide()">&#10095;</button>
+        </div>
+        </div>
+</div>
+    <footer>
+        <p>&copy; 2023 CampusBuzz Hub</p>
+    </footer>
+<head>
+    <!-- ... your meta tags and title ... -->
+    <link rel="stylesheet" href="style1.css">
+
+    <script>
+        let slideIndex = 0;
+
+        function showSlide(index) {
+            const slides = document.querySelector('.slider');
+            const slideWidth = document.querySelector('.slider img').clientWidth;
+            slides.style.transform = `translateX(${-index * slideWidth}px)`;
+        }
+
+        function nextSlide() {
+            slideIndex = (slideIndex + 1) % 2; // Adjust the number based on the number of images in the slider
+            showSlide(slideIndex);
+        }
+
+        function prevSlide() {
+            slideIndex = (slideIndex - 1 + 2) % 2; // Adjust the number based on the number of images in the slider
+            showSlide(slideIndex);
+        }
+
+        // Show the first slide initially
+        showSlide(slideIndex);
+    </script>
+
+</head>
+
+</body>
+</html>
